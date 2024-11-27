@@ -44,7 +44,7 @@ public class PaisController {
         return PaisDao.getInstancia(context).getAll();
     }
 
-    public static void getPaises(Context context) {
+    public static boolean getPaises(Context context) {
         try {
             Call<ArrayList<PaisDTO>> call = new RetrofitConfig()
                     .paisService().getPaises();
@@ -65,6 +65,8 @@ public class PaisController {
 
                 }
             });
+            return true;
         } catch (Exception ex) {}
+        return false;
     }
 }

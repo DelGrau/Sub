@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
+    <TextView
+        android:id="@+id/tvSituacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding=".5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:text="Teste"
+        />
+
     <Button
         android:id="@+id/btCarregarPaises"
         android:layout_width="wrap_content"
